@@ -68,8 +68,8 @@ export default function FilterPanel({ onSearchChange, onFilterChange }: FilterPa
         </Button>
       )}
 
-      <Card className="p-4">
-        <h3 className="font-semibold mb-3">Location</h3>
+      <Card className="p-4 bg-[#181c24] rounded-2xl text-white">
+        <h3 className="font-semibold mb-3 text-white">Location</h3>
         <div className="flex flex-wrap gap-2">
           {LOCATIONS.map((location) => (
             <Badge
@@ -85,8 +85,8 @@ export default function FilterPanel({ onSearchChange, onFilterChange }: FilterPa
         </div>
       </Card>
 
-      <Card className="p-4">
-        <h3 className="font-semibold mb-3">Seniority</h3>
+      <Card className="p-4 bg-[#181c24] rounded-2xl text-white">
+        <h3 className="font-semibold mb-3 text-white">Seniority</h3>
         <div className="flex flex-wrap gap-2">
           {SENIORITY_LEVELS.map((level) => (
             <Badge
@@ -102,8 +102,8 @@ export default function FilterPanel({ onSearchChange, onFilterChange }: FilterPa
         </div>
       </Card>
 
-      <Card className="p-4">
-        <h3 className="font-semibold mb-3">Skills</h3>
+      <Card className="p-4 bg-[#181c24] rounded-2xl text-white">
+        <h3 className="font-semibold mb-3 text-white">Skills</h3>
         <div className="flex flex-wrap gap-2">
           {POPULAR_SKILLS.map((skill) => (
             <Badge

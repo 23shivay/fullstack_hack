@@ -86,7 +86,7 @@ export default function Dashboard() {
         onLogout={() => console.log('Logout')}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <StatsCard title="Saved Jobs" value={savedJobs.size} icon={Briefcase} trend={{ value: 12, label: "from last week" }} />
           <StatsCard title="Resumes" value={3} icon={FileText} />
@@ -100,7 +100,8 @@ export default function Dashboard() {
           />
           <Button
             variant="outline"
-            className="lg:hidden gap-2"
+            className="lg:hidden gap-2 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 text-white shadow-lg hover:scale-[1.04] hover:shadow-xl transition-transform duration-200 border-0"
+            style={{ boxShadow: '0 4px 24px 0 rgba(80,80,200,0.18)' }}
             onClick={() => setShowFilters(!showFilters)}
             data-testid="button-toggle-filters"
           >

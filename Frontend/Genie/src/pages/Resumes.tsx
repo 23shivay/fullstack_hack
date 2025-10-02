@@ -50,7 +50,8 @@ export default function Resumes() {
           </div>
           <Button
             onClick={() => setShowUpload(!showUpload)}
-            className="gap-2"
+            className="gap-2 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 text-white shadow-lg hover:scale-[1.04] hover:shadow-xl transition-transform duration-200 border-0"
+            style={{ boxShadow: '0 4px 24px 0 rgba(80,80,200,0.18)' }}
             data-testid="button-add-resume"
           >
             <Plus className="h-5 w-5" />
@@ -84,7 +85,13 @@ export default function Resumes() {
         {resumes.length === 0 && !showUpload && (
           <div className="text-center py-20">
             <p className="text-muted-foreground mb-4">No resumes uploaded yet</p>
-            <Button onClick={() => setShowUpload(true)}>Upload Your First Resume</Button>
+            <Button
+              onClick={() => setShowUpload(true)}
+              className="bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 text-white shadow-lg hover:scale-[1.04] hover:shadow-xl transition-transform duration-200 border-0 px-8 py-3 text-lg font-semibold"
+              style={{ boxShadow: '0 4px 24px 0 rgba(80,80,200,0.18)' }}
+            >
+              Upload Your First Resume
+            </Button>
           </div>
         )}
       </div>

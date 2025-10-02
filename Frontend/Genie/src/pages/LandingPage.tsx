@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeatureCard from "@/components/FeatureCard";
 import { Button } from "@/components/ui/button";
+
 import {
   Sparkles,
   Target,
@@ -9,6 +10,7 @@ import {
   Mail,
   TrendingUp,
   Shield,
+  ArrowRight,
 } from "lucide-react";
 
 export default function LandingPage() {
@@ -86,7 +88,7 @@ export default function LandingPage() {
               <div
                 key={feature.title}
                 className="bg-gradient-to-br from-gray-900 via-black to-gray-900 
-            border border-gray-800 rounded-2xl p-6 
+            border border-gray-800 rounded-2xl p-2 
             shadow-lg shadow-purple-500/5 hover:shadow-purple-500/20 
             transition-all duration-300"
               >
@@ -98,7 +100,7 @@ export default function LandingPage() {
       </section>
 
       <section className="pt-0 px-4 sm:px-6 lg:px-8 bg-transparent">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 premium-gradient-text bg-clip-text text-transparent">
             Ready to Transform Your Job Search?
           </h2>
@@ -124,18 +126,18 @@ export default function LandingPage() {
 
           {/* Meet the Developers link */}
           <div>
-  <a
-    href="/developers"
-    className="text-2xl sm:text-3xl lg:text-4xl font-extrabold premium-gradient-text hover:scale-105 transition-transform duration-300"
-  >
-    Meet the Developers
-  </a>
-</div>
-
+            <a
+              href="/developers"
+              className="text-2xl sm:text-3xl lg:text-4xl font-extrabold premium-gradient-text hover:scale-105 transition-transform duration-300"
+            >
+              Meet the Developers →
+              
+            </a>
+          </div>
         </div>
       </section>
 
-      <footer className="border-t py-8 px-4 sm:px-6 lg:px-8">
+      <footer className="border-t py-4 px-2 sm:px-3 lg:px-4 bg-transparent">
         <div className="max-w-7xl mx-auto text-center text-sm text-muted-foreground">
           <p>© 2024 Genie. All rights reserved.</p>
         </div>

@@ -39,7 +39,7 @@ export default function JobCard({
   onGenerateColdEmail,
 }: JobCardProps) {
   return (
-    <Card className="p-6 hover-elevate transition-shadow">
+    <Card className="p-6 bg-[#181c24] rounded-2xl hover-elevate text-white font-semibold">
       <div className="space-y-4">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1 min-w-0">
@@ -142,7 +142,7 @@ export default function JobCard({
             Cold Email
           </Button>
         </div>
-      </div>
+        </div>
     </Card>
   );
 }

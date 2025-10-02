@@ -49,9 +49,9 @@ export default function DomainSelector({ selectedDomains = [], onDomainsChange }
             className="fixed inset-0 z-40"
             onClick={() => setIsOpen(false)}
           />
-          <Card className="absolute left-0 top-full mt-2 w-80 p-4 z-50 max-h-96 overflow-y-auto">
+          <Card className="absolute left-0 top-full mt-2 w-80 p-4 z-50 max-h-96 overflow-y-auto bg-[#181c24] rounded-2xl text-white shadow-xl">
             <div className="space-y-3">
-              <h3 className="font-semibold text-sm">Select Job Domains</h3>
+              <h3 className="font-semibold text-sm text-white">Select Job Domains</h3>
               <div className="flex flex-wrap gap-2">
                 {AVAILABLE_DOMAINS.map((domain) => (
                   <Badge
